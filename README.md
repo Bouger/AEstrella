@@ -2,10 +2,11 @@
 
 Implementar un agente basado en objetivos que dado un punto de inicio y un punto destino, encuentre el camino óptimo.
 
-*Las acciones posibles del agente son: (arriba, abajo, izquierda, derecha).*
+• *Las acciones posibles del agente son: (arriba, abajo, izquierda, derecha).*
 
-*El agente deberá ser capaz de resolver el problema planteado mediante un algoritmo de búsqueda A***.
-Proponer una heurística admisible y consistente para el problema.*
+• *El agente deberá ser capaz de resolver el problema planteado mediante un algoritmo de búsqueda A**.
+
+Proponer una heurística admisible y consistente para el problema.
 
 ## Cálculo de Heuristica
 Por cada posibilidad ortogonal la función a calcular será **C = 1 + H**, donde **H = |Bx-Ax| +|By-Ay|**
