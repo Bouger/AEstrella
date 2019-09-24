@@ -1,8 +1,17 @@
-# Foobar
+# Ejercicio A* - Inteligencia Artificial I
 
-Foobar is a Python library for dealing with word pluralization.
+Implementar un agente basado en objetivos que dado un punto de inicio y un punto destino, encuentre el camino óptimo.
 
-## Ejemplos
+*Las acciones posibles del agente son: (arriba, abajo, izquierda, derecha).*
+
+*El agente deberá ser capaz de resolver el problema planteado mediante un algoritmo de búsqueda A***.
+Proponer una heurística admisible y consistente para el problema.*
+
+## Cálculo de Heuristica
+Por cada posibilidad ortogonal la función a calcular será **C = 1 + H**, donde **H = |Bx-Ax| +|By-Ay|**
+
+Siendo **A = (x,y)** y **B = (x,y)** las representaciones de sus posiciones.
+# Ejemplos
 
 Grilla de **30x30** con **100** muros con **A** en **[0,0]** y **B** en **[16,18]**
 
