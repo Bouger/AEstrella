@@ -57,7 +57,7 @@ class aEstrella:
         for i in range(0, len(self.agent.decisiones)):
             if (self.agent.decisiones[i] != -1):
                 if (self.agent.ultimaPosicion != i):
-                    print("Empezando por ",i)
+                    #print("Empezando por ",i)
                     menorValor = i
                     seEncontroComparacion = True
                     break
@@ -71,26 +71,26 @@ class aEstrella:
                      menorValor = i
                      seEncontroPosicion = True
                 else:
-                     print("Guardando ultimaposicion: ", i)
+                     #print("Guardando ultimaposicion: ", i)
                      ultimaPosicion = i
         if (seEncontroPosicion == False):
             if (seEncontroComparacion == False):
-                print("Se necesita la ultima posicion: ", i, ", reemplazando: ", menorValor)
+                #print("Se necesita la ultima posicion: ", i, ", reemplazando: ", menorValor)
                 menorValor = ultimaPosicion
 
 
         self.guardarUltimaUbicacion(menorValor)
         if (menorValor == 0):
-            print("arriba", " menorvalor: " , menorValor)
+            #print("arriba", " menorvalor: " , menorValor)
             self.agent.posicionX = self.agent.posicionX - 1
         elif (menorValor == 1):
-            print("abajo", " menorvalor: " , menorValor)
+           # print("abajo", " menorvalor: " , menorValor)
             self.agent.posicionX = self.agent.posicionX + 1
         elif (menorValor == 2):
-            print("izq", " menorvalor: " , menorValor)
+            #print("izq", " menorvalor: " , menorValor)
             self.agent.posicionY = self.agent.posicionY - 1
         else:
-            print("der" , " menorvalor: " , menorValor)
+           # print("der" , " menorvalor: " , menorValor)
             self.agent.posicionY = self.agent.posicionY + 1
 
 
@@ -121,13 +121,14 @@ class aEstrella:
 
     def comenzarCamino(self):
         print("\033[0m")
+        print("Generando caminos...")
         while (
                 self.agent.posicionX != self.agent.objetivoPosicionX or self.agent.posicionY != self.agent.objetivoPosicionY):
             self.calculoheuristica()
             self.mejorCamino()
 
-            print("[", self.agent.posicionX, "][", self.agent.posicionY, "]")
-        print("El agente ha llegado a la posición")
+            #print("[", self.agent.posicionX, "][", self.agent.posicionY, "]")
+        print("El agente ha llegado a la posición deseada")
         self.grilla.insertarFlechas(self.caminoHecho)
         self.grilla.grilla[self.agent.objetivoPosicionX][self.agent.objetivoPosicionY] = -3
         self.grilla.mostrarGrilla()
