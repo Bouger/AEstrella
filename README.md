@@ -11,7 +11,7 @@ Proponer una heurística admisible y consistente para el problema.
 ## Cálculo de Heuristica
 Por cada posibilidad ortogonal la función a calcular será **C = 1 + H**, donde **H = |Bx-Ax| +|By-Ay|**
 
-Siendo **A = (x,y)** y **B = (x,y)** las representaciones de sus posiciones.
+Siendo **A = (x,y)** (cada nodo vecino) y **B = (x,y)** las representaciones de sus posiciones.
 # Ejemplos
 
 Grilla de **30x30** con **100** muros con **A** en **[0,0]** y **B** en **[16,18]**
@@ -22,7 +22,7 @@ Grilla de **50x50** con **500** muros con **A** en **[0,0]** y **B** en **[36,40
 
 ![alt text](https://i.gyazo.com/1a1673fbc2b427265e58ea95f5932146.png)
 
-Grilla de **100x100** con **2500** muros con **A** en **[0,0]** y **B** en **[0,0]**
+Grilla de **100x100** con **2500** muros con **A** en **[0,0]** y **B** en **[65,72]**
 
 
 ![alt text](https://i.gyazo.com/44498bc8f888eaa8860787323b4b3456.png)
