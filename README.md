@@ -14,7 +14,7 @@ Por cada posibilidad ortogonal la función a calcular será **C = 1 + H**, donde
 Siendo **A = (x,y)** (cada nodo vecino) y **B = (x,y)** las representaciones de sus posiciones.
 # Ejemplos
 
-Grilla de **30x30** con **100** muros con **A** en **[0,0]** y **B** en **[16,18]**
+Grilla de **20x20** con **100** muros con **A** en **[0,0]** y **B** en **[16,18]**
 
 ![alt text](https://i.gyazo.com/a72e5ce6f0ad92126d2a4f60bd341fec.png)
 
